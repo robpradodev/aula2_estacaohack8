@@ -9,6 +9,7 @@ header{
     justify-content: space-between;
     height: 80px;
     background-color: aliceblue;
+    position: sticky;
 }
 
 .menu a{
@@ -25,11 +26,28 @@ header img{
     padding-right: 15px;
 }
 
+.exemplo {
+    display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.semana {
+    display: -webkit-flex;
+    display: flex;
+ 
+}
+
 li{
     list-style: none;
     color: aliceblue;
     font-weight: bold;
     padding: 10px;
+    flex-direction: row;
+    
 }
 
 
@@ -55,3 +73,44 @@ li:last-child{
     width: 200px;
 }
 
+.semana li{
+    background-color: orange;
+    height: 200px;
+    width: 200px;
+    display: block;
+    margin-left: 20px;
+}
+
+
+.container ul{
+  display: flex;
+}
+
+.fds li{
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    
+}
+
+.fds {
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.rolos{
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+    margin-top: -150px;
+    float: right;
+    margin-left: 200px;
+    position: absolute;
+}
+
+.rolos img{
+    width: 100px;
+    height: 100px;
+    
+}
